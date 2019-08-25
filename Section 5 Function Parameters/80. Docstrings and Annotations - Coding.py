@@ -9,6 +9,7 @@ print('#' * 52 + '  We can define such help using docstrings and annotations.')
 def my_func(a, b):
     return a*b
 
+
 help(my_func)
 
 print('#' * 52 + '  Pretty bare! So lets add some additional help:')
@@ -19,6 +20,7 @@ def my_func(a, b):
     'Returns the product of a and b'
 
     return a*b
+
 
 help(my_func)
 
@@ -64,6 +66,7 @@ print('#' * 52 + '  The annotations can be any expression, not just strings:')
 
 x = 3
 y = 5
+
 
 def my_func(a: str) -> 'a repeated ' + str(max(3, 5)) + ' times':
 	return a*max(x, y)
